@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/PPP.ico" />
+    <script src="pets.js" type="application/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="Pets.css" />
+    <title>Paradigm Pet Professionals</title>
+</head>
+<body>
+    <div class="header">
+        <div id="Snav">
+            <form id="search" onsubmit="search()">
+                <input type="text" name="search" placeholder="Hamster Health">
+                <button type="submit">Search</button>
+            </form>
+
+            <nav class="primaryNav">
+                <a href="index.html">Home</a>
+                <a href="dogs.html">Dogs</a>
+                <a href="cats.html">Cats</a>
+                <a href="smallPets.html">Small Pets</a>
+                <a href="#" class="lastNav">Services</a>
+            </nav>
+        </div>
+        
+    </div>
+    <a href="index.html" class="logo">
+        <image class="logoImg" src="Assets/Logo.png" alt="Paradigm Pet Professionals Logo" />
+    </a>
+
+    <button class="formBTN" id="formBTN1" onclick="openConsultForm()">Schedule A Consult Today</button>
+
+
+
+    <hr>
+    <div id="formPopup1">
+
+        <!--
+
+            name, phone number, email address, and time zone, pet’s name, type, and age. 
+
+        -->
+        <form>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="timezone">Time Zone:</label>
+            <input type="datetime-local" id="timezone" name="timezone">
+
+            <label for="petName">Pet's Name:</label>
+            <input type="text" id="petName" name="petName">
+
+            <label for="petType">Pet Type:</label>
+            <input type="text" id="petType" name="petType">
+
+            <label for="age">Pet's Age: <span id="years">(years)</span></label>
+            <input type="number" min="0" max="100">
+
+            <button type="submit" class="contactSubmit">Submit</button>
+
+        </form>
+    </div>
+    
+
+
+    <p class="white">Paradigm Pet Professionals has 12 years’ experience working with pet owners, certifications in pet health and nutrition, and customer recognition for outstanding support </p>
+    
+    <img id="consult" src="Assets/HomeMeeting.jpg" alt="Private home consultation" />
+
+    <p class="dark" id="dark1">Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion. </p>
+
+    <div class="chevrons">
+        <div class="chevron" id="chev1"></div>
+        <div class="chevron" id="chev2"></div>
+    </div>
+
+
+    <p class="light" id="light1">Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.</p>
+
+    <img id="kittyPeeking" src="Assets/kitty_peeking.jpg" alt="kitty peeking over wall">
+    
+    <div class="dark" id="dark2">
+        <h1 aria-labelledby="links" id="linksLabel">Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:</h1>
+
+        <ul id="links">
+
+            <li>General Adoption Resources: <a href="https://theshelterpetproject.org/">https://theshelterpetproject.org/</a></li>
+
+            <li>ASPCA: <a href="https://www.aspca.org/">https://www.aspca.org/</a></li>
+
+            <li>Fish Rescue: <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/">https://www.sterlingshelter.org/humane-society/koi-fish-rescue/</a></li>
+
+            <li>Snake Rescue: <a href="https://savethesnakes.org/snakerescuecall/">https://savethesnakes.org/snakerescuecall/</a></li>
+
+            <li>Bird Rescue: <a href="https://ftlob.rescuegroups.org/">https://ftlob.rescuegroups.org/</a></li>
+
+        </ul>
+    
+    </div>
+
+    <p id="bottom">We are also happy to help you navigate the adoption process! We will guide you through each step in the process from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, to bringing your new loved one home. Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.</p>
+
+    <div class="btn2Holder">
+        <button class="formBTN formBTN2" onclick="openConsultForm()">Schedule Your Consult Here</button>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+<!--
+
+Primary colors:
+Midnight Blue - #003B6D
+Blue Sky- #6699CC
+
+Secondary colors:
+Dim gray - #676767
+Silver- #BDBDBD
+
+-->

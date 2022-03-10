@@ -1,0 +1,451 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#formPopup1 {
+    /*
+    display: none;
+    */
+    background-color: #BDBDBD;
+    width: min-content;
+    margin: auto;
+}
+
+#formBTN1 {
+    position: absolute;
+    height: 40px;
+    right: 10px;
+    top: 34px;
+    background-color: #6699CC;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.logo {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width:220px;
+}
+
+.logoImg {
+    width: 100%;
+}
+
+
+.header {
+    width: 100%;
+}
+
+#Snav {
+    width: max-content;
+    margin: auto;
+}
+
+#Snav form {
+    width: max-content;
+    margin: 12px auto 0;
+}
+
+form button {
+    background-color: #003B6D;
+    color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 3px 5px;
+    position: relative;
+    left: -40px;
+}
+
+
+form input {
+    background-color: #BDBDBD;
+    margin: 10px 0 2px;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 3px 15px;
+    width: 300px;
+    margin-left: 40px;
+}
+
+form input:focus {
+    background-color: #676767;
+    color: white;
+}
+
+.primaryNav {
+    background-color: #BDBDBD;
+    padding: 3px;
+    width: fit-content;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.primaryNav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 6px;
+    padding: 3px 8px;
+}
+
+.lastNav {
+    margin-right: 6px;
+}
+
+.primaryNav a:hover {
+    background-color: #003B6D;
+    color: white;
+    border-radius: 20px;
+}
+
+/*
+        Home Page
+*/
+
+#consult {
+    width: 100%;
+}
+
+.white {
+    width: 50%;
+    margin: auto;
+    padding: 10px 0 25px;
+}
+
+.dark {
+    
+    margin: auto;
+    background-color: #676767;
+    color: white;
+    padding: 20px 40px;
+}
+
+#dark1 {
+    position: relative;
+    top: -100px;
+    text-align: center;
+}
+
+.light {
+    background-color: #BDBDBD;
+    color: black;
+    text-align: left;
+    padding: 20px 40px;
+    margin: 0;
+}
+
+.chevron {
+    transform: rotate(90deg);
+    height: 150px;
+    width: 50px;
+    margin: -210px auto;
+    padding: 0 0 80px 80px;
+    background-color: #6699CC;
+    clip-path: polygon(10% 0, 35% 50%, 10% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+#chev1 {
+    margin-top: -110px;
+    margin-bottom: -100px;
+}
+
+#chev2 {
+    margin-bottom: -90px;
+}
+
+#kittyPeeking {
+    width: 100%;
+    position: relative;
+    top: -100px;
+    z-index: -1;
+}
+
+#dark2 *{
+    color: white;
+}
+
+#dark2 {
+    position: relative;
+    top: -150px;
+}
+
+#linksLabel {
+    font-size: larger;
+    text-align: center;
+    padding: 5px 0 10px;
+}
+
+#bottom {
+    position: relative;
+    top: -90px;
+    width: 95%;
+    margin: auto;
+}
+
+.formBTN2 {
+    height: 45px;
+    background-color: #003B6D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.btn2Holder {
+    width: max-content;
+    margin: -70px auto 30px;
+}
+
+
+
+/*
+
+        Dogs Page
+
+*/
+
+
+#withDog {
+    width: 100%;
+}
+
+.headings {
+    width: max-content;
+    text-align: center;
+    margin: auto;
+
+    font-family: Verdana, sans-serif;
+}
+
+#D1 {
+    margin: 0 auto 25px;
+    font-size: 60px;
+}
+
+#DL1, #DL2 {
+    color: black;
+}
+
+#D2 {
+    width: 100%;
+    font-size: 40px;
+    margin-top: 15px;
+
+    background-color: #BDBDBD;
+    padding: 10px 0;
+
+    position: relative;
+    top: -20px;
+}
+
+#D3 {
+    font-size: 40px;
+    width: 100%;
+    background-color:#003B6D;
+    color:white;
+    padding: 20px 0;
+}
+
+#D4 {
+    font-size: 40px;
+    width: 100%;
+    background-color:#6699CC;
+    color: white;
+    padding: 20px 0;
+}
+
+#D5 {
+    font-size: 40px;
+    width: 100%;
+    background-color:#676767;
+    color: white;
+    padding: 20px 0;
+}
+
+.dogP {
+    margin: 20px 50px 35px;
+}
+
+#dogRun {
+    width: 100%;
+    position: relative;
+    top: -50px;
+    z-index: -1;
+}
+
+#DP2 {
+    margin-top: -20px;
+}
+
+#dogBath {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#dogVet {
+    width: 100%;
+}
+
+#dogBTN {
+    margin: 45px 0 10px;
+}
+
+
+
+/*
+        Cats Page
+*/
+
+
+#C1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#C2 {
+    font-size: 40px;
+    width: 100%;
+    padding: 20px 0;
+    background-color:#6699CC;
+    color: white;
+}
+
+.catP {
+    margin: 20px 50px 35px;
+}
+
+#catHand {
+    width: 100%;
+}
+
+#kitten4 {
+    width: 100%;
+}
+
+#catListLabel {
+    font-size: medium;
+    text-align: center;
+}
+
+#reasons {
+    width: max-content;
+    margin: auto;
+}
+
+#C3 {
+    font-size: 40px;
+    width: 100%;
+    padding: 20px 0;
+    background-color:#BDBDBD;
+}
+
+#cat1Year {
+    width: 100%;
+}
+
+#C4 {
+    font-size: 40px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #003B6D;
+    color:white;
+}
+
+#catGrump {
+    width: 100%;
+}
+
+#C5 {
+    font-size: 40px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #676767;
+    color: white;
+}
+
+#catOld {
+    width: 100%;
+}
+
+#catBTN {
+    margin-top: 60px;
+}
+
+
+
+/*
+
+        Dogs Page
+
+*/
+
+
+#S1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#guineaPig {
+    width: 100%;
+}
+
+#S2 {
+    font-size: 40px;
+    width: 100%;
+    background-color: #BDBDBD;
+    padding: 20px 0;
+    position: relative;
+    top: -30px;
+}
+
+#sP {
+    margin: 20px 50px 35px;
+    position: relative;
+    top: -20px;
+}
+
+#S3 {
+    font-size: larger;
+    position: relative;
+    top: -20px;
+}
+
+#resources {
+    width: max-content;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+#resources a {
+    color: black;
+    width: max-content;
+    margin: auto;
+}
+
+#sBTN {
+    margin: 20px auto 0;
+}
+
+
+/*
+
+Primary colors:
+Midnight Blue - #003B6D
+Blue Sky- #6699CC
+
+Secondary colors:
+Dim gray - #676767
+Silver- #BDBDBD
+
+*/
