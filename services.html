@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/PPP.ico" />
+    <script src="pets.js" type="application/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="Pets.css" />
+    <title>Our Services</title>
+</head>
+<body>
+
+    <div class="header">
+        <div id="Snav">
+            <form id="search" onsubmit="search()">
+                <input type="text" name="search" placeholder="Hamster Health">
+                <button type="submit">Search</button>
+            </form>
+
+            <nav class="primaryNav">
+                <a href="index.html">Home</a>
+                <a href="dogs.html">Dogs</a>
+                <a href="cats.html">Cats</a>
+                <a href="smallPets.html">Small Pets</a>
+                <a href="services.html" class="lastNav">Services</a>
+            </nav>
+        </div>
+        
+    </div>
+    <a href="index.html" class="logo">
+        <image class="logoImg" src="Assets/Logo.png" alt="Paradigm Pet Professionals Logo" />
+    </a>
+
+    <button type="button" class="formBTN" id="formBTN1" onclick='openConsultForm("formPopup1")'>Schedule A Consult Today</button>
+
+
+
+    <hr>
+
+
+
+    <div id="formPopup1" class="popup">
+
+        <form id="form1Home" onsubmit='submitForm("form1Home"); return false;'>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="timezone">Time Zone:</label>
+            <br/>
+            <select id="timezone" name="timezone">
+                <option value="EST">EST</option>
+                <option value="PST">PST</option>
+                <option value="CST">CST</option>
+                <option value="MST">MST</option>
+                <option value="AKST">AKST</option>
+                <option value="HST"></option>
+            </select>
+            <br/>
+
+            <label for="petName">Pet's Name:</label>
+            <input type="text" id="petName" name="petName">
+
+            <label for="petType">Pet Type:</label>
+            <input type="text" id="petType" name="petType">
+
+            <label for="age">Pet's Age: <span id="years">(years)</span></label>
+            <input type="number" min="0" max="100">
+            
+            <button type="submit" class="contactSubmit" id="CS1">Submit</button>
+            
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <h1 class="headings" id="S1">Our Services</h1>
+
+    <img id="meeting2" src="Assets/meeting2.jpg" alt="1 0n 1 meeting" />
+
+    
+    <div class="dark" id="dark2">
+        <h2 aria-labelledby="servicesList" id="linksLabel">What We Offer:</h2>
+
+        <ul id="servicesList">
+
+            <li>Virtual consultations and presentations</li>
+
+            <li>One-on-one consultations concerning individual pets</li>
+
+            <li>Group presentations regarding general pet care <small><br/>(can be tailored to the needs of the group)</small></li>
+
+        </ul>
+    
+    </div>
+
+
+    <div class="btn2Holder">
+        <button type="button" class="formBTN formBTN2" id="sBTN" onclick='openConsultForm("formBottomSmall")'>Schedule Your Consult Here</button>
+    </div>
+
+    <div class="popup formBottom" id="formBottomSmall">
+        <form onsubmit='submitForm("formBottomSmall"); return false;'>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="timezone">Time Zone:</label>
+            <br/>
+            <select id="timezone" name="timezone">
+                <option value="EST">EST</option>
+                <option value="PST">PST</option>
+                <option value="CST">CST</option>
+                <option value="MST">MST</option>
+                <option value="AKST">AKST</option>
+                <option value="HST"></option>
+            </select>
+            <br/>
+
+            <label for="petName">Pet's Name:</label>
+            <input type="text" id="petName" name="petName">
+
+            <label for="petType">Pet Type:</label>
+            <input type="text" id="petType" name="petType">
+
+            <label for="age">Pet's Age: <span id="years">(years)</span></label>
+            <input type="number" min="0" max="100">
+            
+            <button type="submit" class="contactSubmit" id="CS1">Submit</button>
+            
+        </form>
+    </div>
+
+
+</body>
+</html>
