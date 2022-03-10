@@ -22,7 +22,7 @@
                 <a href="dogs.html">Dogs</a>
                 <a href="cats.html">Cats</a>
                 <a href="smallPets.html">Small Pets</a>
-                <a href="#" class="lastNav">Services</a>
+                <a href="services.html" class="lastNav">Services</a>
             </nav>
         </div>
         
@@ -31,19 +31,20 @@
         <image class="logoImg" src="Assets/Logo.png" alt="Paradigm Pet Professionals Logo" />
     </a>
 
-    <button class="formBTN" id="formBTN1" onclick="openConsultForm()">Schedule A Consult Today</button>
+    
+        <button type="button" class="formBTN" id="formBTN1" onclick='openConsultForm("formPopup1")'>Schedule A Consult Today</button>
 
 
 
     <hr>
-    <div id="formPopup1">
+    <div id="formPopup1" class="popup">
 
         <!--
 
             name, phone number, email address, and time zone, pet’s name, type, and age. 
 
         -->
-        <form>
+        <form id="form1Home" onsubmit='submitForm("form1Home"); return false;'>
 
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
@@ -55,7 +56,16 @@
             <input type="email" id="email" name="email">
 
             <label for="timezone">Time Zone:</label>
-            <input type="datetime-local" id="timezone" name="timezone">
+            <br/>
+            <select id="timezone" name="timezone">
+                <option value="EST">EST</option>
+                <option value="PST">PST</option>
+                <option value="CST">CST</option>
+                <option value="MST">MST</option>
+                <option value="AKST">AKST</option>
+                <option value="HST"></option>
+            </select>
+            <br/>
 
             <label for="petName">Pet's Name:</label>
             <input type="text" id="petName" name="petName">
@@ -65,9 +75,9 @@
 
             <label for="age">Pet's Age: <span id="years">(years)</span></label>
             <input type="number" min="0" max="100">
-
-            <button type="submit" class="contactSubmit">Submit</button>
-
+            
+            <button type="submit" class="contactSubmit" id="CS1">Submit</button>
+            
         </form>
     </div>
     
@@ -111,9 +121,49 @@
     <p id="bottom">We are also happy to help you navigate the adoption process! We will guide you through each step in the process from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, to bringing your new loved one home. Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.</p>
 
     <div class="btn2Holder">
-        <button class="formBTN formBTN2" onclick="openConsultForm()">Schedule Your Consult Here</button>
+        <button type="button" class="formBTN formBTN2" onclick="openConsultForm('formBottomHome')">Schedule Your Consult Here</button>
     </div>
     
+
+    <div class="popup formBottom" id="formBottomHome">
+        <form id="form2Home" onsubmit='submitForm("form2Home"); return false;'>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="timezone">Time Zone:</label>
+            <br/>
+            <select id="timezone" name="timezone">
+                <option value="EST">EST</option>
+                <option value="PST">PST</option>
+                <option value="CST">CST</option>
+                <option value="MST">MST</option>
+                <option value="AKST">AKST</option>
+                <option value="HST"></option>
+            </select>
+            <br/>
+
+            <label for="petName">Pet's Name:</label>
+            <input type="text" id="petName" name="petName">
+
+            <label for="petType">Pet Type:</label>
+            <input type="text" id="petType" name="petType">
+
+            <label for="age">Pet's Age: <span id="years">(years)</span></label>
+            <input type="number" min="0" max="100">
+            
+            <button type="submit" class="contactSubmit" id="CS1">Submit</button>
+            
+        </form>
+    </div>
+
+
 </body>
 </html>
 
