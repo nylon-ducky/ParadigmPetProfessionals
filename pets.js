@@ -147,6 +147,9 @@ window.onload = () => {
 
     hist.innerHTML = `<a href="index.html">Home</a> > <a href="${page}">${pname}</a>`;
 
+    let active = document.getElementById(pname)
 
+    active.style.color = "white";
+    active.style.backgroundColor = "#003B6D";
 
 }
